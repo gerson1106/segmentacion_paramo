@@ -197,7 +197,6 @@ seaborn==0.12.2
 segmentation-models==1.0.1
 Send2Trash==1.8.0
 setuptools==65.6.3
-shapely==2.0.1
 tensorflow==1.15.0
 tensorflow-estimator==1.15.1
 tensorflow-intel==2.11.0
