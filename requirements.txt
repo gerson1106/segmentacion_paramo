@@ -205,7 +205,6 @@ sniffio==1.2.0
 snowballstemmer==2.2.0
 sortedcontainers==2.4.0
 soupsieve==2.3.2.post1
-Sphinx==4.2.0
 tensorflow==1.15.0
 tensorflow-estimator==1.15.1
 tensorflow-intel==2.11.0
