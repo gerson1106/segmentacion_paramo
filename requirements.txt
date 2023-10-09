@@ -218,7 +218,6 @@ sympy==1.10.1
 tenacity==8.2.2
 tensorboard==1.15.0
 tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.1
 tensorflow==1.15.0
 tensorflow-estimator==1.15.1
 tensorflow-intel==2.11.0
