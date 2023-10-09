@@ -6,3 +6,4 @@ numpy==1.21.6
 keras==2.11.0
 ultralytics==8.0.145
 tqdm==4.66.1
+opencv-python==4.8.0.76

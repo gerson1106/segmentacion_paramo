@@ -1,5 +1,5 @@
 import os
-#os.environ["SM_FRAMEWORK"] = "tf.keras"
+os.environ["SM_FRAMEWORK"] = "tf.keras"
 import base64
 from tensorflow import keras
 import os
