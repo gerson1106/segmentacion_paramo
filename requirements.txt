@@ -1,4 +1,5 @@
 streamlit
+tensorflow==1.15.0
 matplotlib==3.5.3
 patchify==0.2.3
 numpy==1.21.6
