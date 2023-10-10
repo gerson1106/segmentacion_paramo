@@ -3,7 +3,6 @@ os.environ["SM_FRAMEWORK"] = "tf.keras"
 import base64
 from tensorflow import keras
 import os
-import cv2
 import numpy as np
 import plotly.express as px
 from matplotlib import pyplot as plt
@@ -175,13 +174,14 @@ with c30:
   
    if img_file_buffer is not None: 
 
-    file_bytes = img_file_buffer.read()
+    image_rgb = Image.open(img_file_buffer).convert('RGB')
     
     #img = cv2.imdecode(np.frombuffer(img_file_buffer.read(), np.uint8), 1)
-    if not file_bytes:
+    if image_rgb is None:
          st.error("El archivo cargado está vacío. Por favor, carga un archivo válido.")
     else:
-         img = cv2.imdecode(np.frombuffer(file_bytes, np.uint8), 1)
+         img_array_rgb = np.array(image_rgb)
+         img = img_array_rgb[:, :, ::-1]
     
     #col1.header("img_file_buffer")
     image = np.array(Image.open(img_file_buffer))    
