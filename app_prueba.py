@@ -13,7 +13,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 scaler = MinMaxScaler()
 from smooth_tiled_predictions import *
 import time
-
+CUDA_VISIBLE_DEVICES=0
 st.set_page_config(page_icon="🌳", page_title="G&ESan-SEGMENTACIÓN", layout="wide")
 logo="logo-udi-negro.png"
 imagen1 = np.array(Image.open(logo))
