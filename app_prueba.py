@@ -4,7 +4,6 @@ import base64
 from tensorflow import keras
 import os
 import numpy as np
-import plotly.express as px
 from matplotlib import pyplot as plt
 from PIL import Image
 from tensorflow.keras.metrics import MeanIoU
@@ -343,44 +342,7 @@ with c30:
             #st.write('🔴 Edificaciones')
             #st.write('🔵 Cultivos')
             #st.write('🟣 Lagunas')
-# Cargar la imagen de fondo
-df = px.data.iris()
-
-def get_img_as_base64(file):
-    with open(file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-
-#img = get_img_as_base64("C:/Users/gerso/anaconda3/Lib/site-packages/streamlit/static/para1.jpg")
-img2= get_img_as_base64("C:/Users/gerso/anaconda3/Lib/site-packages/streamlit/static/Good_Stuff_Image_1.jpg")
-
-page_bg_img = f"""
-<style>
-[data-testid="stAppViewContainer"] > .main {{
-background-image: url("data:image/png;base64,{img2}");
-background-size: 300%;
-opacity:0.2;
-background-position: top left;
-background-repeat: no-repeat;
-background-attachment: local;
-}}
-
-</style>
-"""
-page2_bg_img = """
-<style>
-[data-testid="stAppViewContainer"] {
-background-color: #bbbbc4;
-opacity: 0.2;
-background-size: 40px 40px;
-background-image: repeating-linear-gradient(45deg, #cacbe1 0, #cacbe1 4px, #bbbbc4 0, #bbbbc4 50%);;
-}
-</style>
-"""
-#st.markdown(page2_bg_img, unsafe_allow_html=True)
-#st.sidebar.title("Páramo Santurbán")
-#st.sidebar.write("El páramo de Santurbán, ubicado en Colombia, es un ecosistema de gran importancia debido a su biodiversidad y su función como fuente de agua dulce para comunidades locales. Este ecosistema alberga especies endémicas y regula el flujo de agua, contribuyendo a la seguridad hídrica. Su delimitación y conservación son esenciales para preservar la biodiversidad, garantizar la calidad del agua y mitigar el cambio climático, destacando la necesidad de políticas de conservación y desarrollo sostenible en la región.")    
+ 
 st.markdown("")
 st.markdown("")
 st.markdown("")
