@@ -1,12 +1,12 @@
 import os
 os.environ["SM_FRAMEWORK"] = "tf.keras"
 import base64
-#from tensorflow import keras
+from tensorflow import keras
 import os
 import numpy as np
 from matplotlib import pyplot as plt
 from PIL import Image
-#from tensorflow.keras.metrics import MeanIoU
+from tensorflow.keras.metrics import MeanIoU
 import streamlit as st
 import io
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
